@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home - The Football Leagues</title>
+  </head>
+  <body>
+    <section class="showcase active">
+      <header>
+        <h2 class="logo">The Football Leagues</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="explore.mp4" muted autoplay loop></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Playing Football</h3>
+        <p>
+          The Football Leagues -- A website where you can find your favorite
+          <strong>Football League or Group </strong>
+        </p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="facebook.png" alt="Facebook Image" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="twitter.png" alt="Twitter Image" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="instagram.png" alt="I nstagram Image" /></a>
+        </li>
+      </ul>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">EPL</a></li>
+          <li><a href="#">Bundesliga</a></li>
+          <li><a href="#">Seria A</a></li>
+          <li><a href="#">La Liga</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home - The Football Leagues</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">The Football Leagues</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="explore.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Playing Football</h3>
+        <p>
+          The Football Leagues -- A website where you can find your favorite
+          <strong>Football League or Group </strong>
+        </p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">EPL</a></li>
+        <li><a href="#">Bundesliga</a></li>
+        <li><a href="#">Seria A</a></li>
+        <li><a href="#">La Liga</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
