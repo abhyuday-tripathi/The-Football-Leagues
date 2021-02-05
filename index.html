@@ -8,6 +8,11 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Home - The Football Leagues</title>
   </head>
@@ -26,7 +31,7 @@
           The Football Leagues -- A website where you can find your favorite
           <strong>Football League or Group </strong>
         </p>
-        <a href="#">Explore</a>
+        <a href="login.html">Explore</a>
       </div>
       <ul class="social">
         <li>
@@ -46,6 +51,12 @@
         <li>
           <a href="https://www.skysports.com/transfer-centre">Transfers</a>
         </li>
+        <li>
+          <a href="login.html">Sign In</a>
+        </li>
+        <li>
+          <a href="signUp.html">Sign Up</a>
+        </li>
         <div class="btn-group dropstart">
           <button
             type="button"
@@ -64,6 +75,14 @@
         </div>
       </ul>
     </div>
-    <script src="App.js"></script>
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
