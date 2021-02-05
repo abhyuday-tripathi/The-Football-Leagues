@@ -151,6 +151,7 @@ header .logo {
 }
 .menu ul li {
   list-style: none;
+  margin-bottom: 20px;
 }
 .menu ul li a {
   text-decoration: none;
@@ -172,4 +173,8 @@ header .logo {
   .text h3 {
     font-size: 2em;
   }
+}
+
+.dropdown-menu.show {
+  padding: 15px;
 }
