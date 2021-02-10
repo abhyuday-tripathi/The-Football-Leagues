@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+body {
+  overflow: hidden !important;
+}
+
 .container {
   position: absolute;
   top: 50%;
