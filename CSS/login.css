@@ -1,11 +1,6 @@
 * {
   font-family: 'Poppins', sans-serif;
   color: white;
-  overflow: hidden;
-}
-
-body {
-  overflow: hidden !important;
 }
 
 .container {
