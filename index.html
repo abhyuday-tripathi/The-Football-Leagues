@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Home - The Football Leagues</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
         <h2 class="logo">The Football Leagues</h2>
         <div class="toggle"></div>
       </header>
-      <video src="ASSETS/explore.mp4" muted loop autoplay></video>
+      <video src="../ASSETS/explore.mp4" muted loop autoplay></video>
       <div class="overlay"></div>
       <div class="text">
         <h2>Never Stop</h2>
@@ -31,17 +31,17 @@
           The Football Leagues -- A website where you can find your favorite
           <strong>Football League or Group </strong>
         </p>
-        <a href="HTML/login.html">Explore</a>
+        <a href="#">Explore</a>
       </div>
       <ul class="social">
         <li>
-          <a href="#"><img src="ASSETS/facebook.png" /></a>
+          <a href="#"><img src="../ASSETS/facebook.png" /></a>
         </li>
         <li>
-          <a href="#"><img src="ASSETS/twitter.png" /></a>
+          <a href="#"><img src="../ASSETS/twitter.png" /></a>
         </li>
         <li>
-          <a href="#"><img src="ASSETS/instagram.png" /></a>
+          <a href="#"><img src="../ASSETS/instagram.png" /></a>
         </li>
       </ul>
     </section>
@@ -52,10 +52,7 @@
           <a href="https://www.skysports.com/transfer-centre">Transfers</a>
         </li>
         <li>
-          <a href="HTML/login.html">Sign In</a>
-        </li>
-        <li>
-          <a href="HTML/signUp.html">Sign Up</a>
+          <a href="#">Derby</a>
         </li>
         <div class="btn-group dropstart">
           <button
@@ -67,21 +64,43 @@
             Leagues
           </button>
           <ul class="dropdown-menu">
-            <li><a href="HTML/epl.html">EPL</a></li>
-            <li><a href="HTML/bundesliga.html">Bundesliga</a></li>
-            <li><a href="HTML/serie-a.html">Serie A</a></li>
-            <li><a href="HTML/la-liga.html">La Liga</a></li>
+            <li><a href="../HTML/epl.html">EPL</a></li>
+            <li><a href="../HTML/bundesliga.html">Bundesliga</a></li>
+            <li><a href="../HTML/serie-a.html">Serie A</a></li>
+            <li><a href="../HTML/la-liga.html">La Liga</a></li>
           </ul>
         </div>
       </ul>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
     <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: 'AIzaSyDlOs1KWGsdzBLqfJEJsmjXW1vYSNtWTYs',
+        authDomain: 'the-football-leagues.firebaseapp.com',
+        projectId: 'the-football-leagues',
+        databaseURL: 'https://the-football-leagues.firebaseio.com',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Initiallize auth and firestore
+      const auth = firebase.auth();
       const menuToggle = document.querySelector('.toggle');
       const showcase = document.querySelector('.showcase');
 
       menuToggle.addEventListener('click', () => {
         menuToggle.classList.toggle('active');
         showcase.classList.toggle('active');
+      });
+
+      const logout = document.querySelector('#logOutBtn');
+
+      logout.addEventListener('click', e => {
+        auth.signOut().then(() => {
+          window.location = 'HTML/logOut.html';
+        });
       });
     </script>
   </body>

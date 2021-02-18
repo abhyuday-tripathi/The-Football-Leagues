@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="CSS/signUp.css" />
+    <link rel="stylesheet" href="../CSS/signUp.css" />
     <title>Sign Up - The Football Leagues</title>
   </head>
   <body>
-    <video src="explore.mp4" loop autoplay muted></video>
+    <video src="../ASSETS/explore.mp4" loop autoplay muted></video>
     <div class="overlay"></div>
     <div class="container mt-50">
-      <form class="form mt-50">
+      <form id="signup-form" class="form mt-50">
         <div class="mb-3 mt-50">
           <label for="emailSignUp" class="form-label">Email address</label>
           <input
@@ -36,7 +36,7 @@
         </div>
         <div class="mb-3">
           <label for="passwordSingUp" class="form-label">Password</label>
-          <input type="password" class="form-control" id="passwordSingUp" />
+          <input type="password" class="form-control" id="passwordSignUp" />
         </div>
         <button
           type="submit"
@@ -47,5 +47,27 @@
         </button>
       </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyDlOs1KWGsdzBLqfJEJsmjXW1vYSNtWTYs',
+        authDomain: 'the-football-leagues.firebaseapp.com',
+        projectId: 'the-football-leagues',
+        databaseURL: 'https://the-football-leagues.firebaseio.com',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Initiallize auth and firestore
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="../SCRIPTS/auth.js"></script>
   </body>
 </html>
