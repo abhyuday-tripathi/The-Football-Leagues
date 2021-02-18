@@ -95,14 +95,6 @@
         menuToggle.classList.toggle('active');
         showcase.classList.toggle('active');
       });
-
-      const logout = document.querySelector('#logOutBtn');
-
-      logout.addEventListener('click', e => {
-        auth.signOut().then(() => {
-          window.location = 'HTML/logOut.html';
-        });
-      });
     </script>
   </body>
 </html>
