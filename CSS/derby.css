@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+nav {
+  height: 10vh;
+  background: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  flex-direction: column;
+  padding: 45px;
+}
+
+nav small {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+div .heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-small {
+  padding-top: 20px;
+  font-family: 'Menlo';
+}
+
+.list {
+  font-family: Menlo;
+}
+
+.main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+}
+
+.main .para {
+  font-family: Menlo;
+  font-size: 18px;
+}
