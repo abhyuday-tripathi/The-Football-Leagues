@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 @font-face {
-  font-family: 'Menlo';
+  font-family: "Menlo";
   font-style: normal;
   font-weight: normal;
-  src: local('Menlo'),
-    url('../ASSETS/menlo-cufonfonts-webfont/Menlo-Regular.woff') format('woff');
+  src: local("Menlo"),
+    url("../ASSETS/menlo-cufonfonts-webfont/Menlo-Regular.woff") format("woff");
 }
 
 * {
@@ -26,7 +26,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   flex-direction: column;
@@ -46,20 +46,20 @@ div {
 }
 
 div .heading {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .text-small {
   padding-top: 20px;
-  font-family: 'Menlo';
+  font-family: "Menlo";
 }
 
 .list {
-  font-family: 'Menlo';
+  font-family: "Menlo";
 }
 
 .main h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 50px;
 }
 
@@ -71,5 +71,24 @@ div .heading {
 @media (max-width: 1158px) {
   nav h1 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .league h1 {
+    font-size: 24px;
+  }
+
+  .league .para {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .imgDiv {
+    width: 100vw;
+  }
+
+  img {
+    width: 100%;
   }
 }
