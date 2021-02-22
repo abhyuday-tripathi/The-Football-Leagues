@@ -69,14 +69,22 @@ div .heading {
 }
 
 @media (max-width: 1158px) {
+  body {
+    padding: 0;
+  }
+
   nav h1 {
     font-size: 20px;
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 451px) {
+  body {
+    padding: 0;
+  }
+
   .league h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .league .para {
