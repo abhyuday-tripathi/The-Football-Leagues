@@ -33,17 +33,6 @@
         </p>
         <a href="#">Explore</a>
       </div>
-      <ul class="social">
-        <li>
-          <a href="#"><img src="ASSETS/facebook.png" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="ASSETS/twitter.png" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="ASSETS/instagram.png" /></a>
-        </li>
-      </ul>
     </section>
     <div class="menu">
       <ul>
@@ -54,7 +43,6 @@
         <li>
           <a href="HTML/derby.html">Derby</a>
         </li>
-        <li><a href="/HTML/signUp.html">Sign Up</a></li>
         <div class="btn-group dropstart">
           <button
             type="button"
@@ -73,21 +61,7 @@
         </div>
       </ul>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
     <script>
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: 'AIzaSyDlOs1KWGsdzBLqfJEJsmjXW1vYSNtWTYs',
-        authDomain: 'the-football-leagues.firebaseapp.com',
-        projectId: 'the-football-leagues',
-        databaseURL: 'https://the-football-leagues.firebaseio.com',
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-
-      // Initiallize auth and firestore
-      const auth = firebase.auth();
       const menuToggle = document.querySelector('.toggle');
       const showcase = document.querySelector('.showcase');
 
